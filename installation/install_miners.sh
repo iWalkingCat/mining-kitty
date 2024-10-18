@@ -10,7 +10,7 @@ MINERS_FOLDER="~/miners"
 QUBIC_ALEO_FOLDER="$MINERS_FOLDER/qubic_aleo"
 
 # Miners Version
-QUBICLI_VERISON="2.2.1"
+QUBICLI_VERSION="2.2.1"
 ALEO_VERSION="3.0.10"
 
 # Install Qubic li + Aleo F2pool
