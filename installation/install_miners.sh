@@ -6,7 +6,7 @@
 #--------------------------------------------------------------------
 
 ############### Folders ###############
-MINERS_FOLDER="~/miners"
+MINERS_FOLDER="/home/$(whoami)/miners"
 QUBIC_FOLDER="$MINERS_FOLDER/qubic"
 QUBIC_CPU_FOLDER="$MINERS_FOLDER/qubic_cpu"
 ALEO_FOLDER="$MINERS_FOLDER/aleo"
@@ -16,7 +16,7 @@ XMRIG_FOLDER="$MINERS_FOLDER/xmrig"
 QUBICLI_VERSION="2.2.1"
 ALEO_VERSION="3.0.10"
 XMRIG_VERSION="6.22.0"
-#######################################
+
 
 # Install Qubic li [GPU+CPU]
 mkdir -p $QUBIC_FOLDER										# Create folder for Qubic
@@ -31,7 +31,7 @@ wget -P /tmp https://public-download-ase1.s3.ap-southeast-1.amazonaws.com/aleo-m
 tar -xvf /tmp/aleominer-$ALEO_VERSION.tar.gz -C $ALEO_FOLDER								# Unarchiving
 
 # Install XMRIG [CPU]
-mkdir -p $XMRIG_FOLDER															# Create folder for XMrig
+mkdir -p $XMRIG_FOLDER														# Create folder for XMrig
 wget -P /tmp https://github.com/xmrig/xmrig/releases/download/v$XMRIG_VERSION/xmrig-$XMRIG_VERSION-linux-static-x64.tar.gz	# Download XMrig
 tar -xvf /tmp/xmrig-$XMRIG_VERSION-linux-static-x64.tar.gz -C $XMRIG_FOLDER							# Unarchiving
 
