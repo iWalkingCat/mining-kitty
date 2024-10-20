@@ -11,6 +11,16 @@ For heating, he chose cryptocurrency **mining**. Kitten created a **kit** for th
 
 The project was created to automate the installation of packages necessary for convenient operation, deployment of mining software and its configuration files, and adding a service responsible for overclocking the GPU.
 
+Tested on Ubuntu 24.04.1 LTS.
+Installation includes packages: vim, tmux.
+Installation includes miners: Qubic li, f2pool Aleominer, XMrig.
+
+The video card overclocking service is located in `/etc/systemd/system/overclock.service`. The following values ​​are used by default: core offset 200, core lock 2700, power limit 280, fan 70.
+
+Miners are installed in the directory `/home/root/miners/`
+
+Wallet addresses are stored in the file `person/wallets` in the cloned repository. **The script for pushing new wallets is in development...**
+
 # How to use it?
 
 _All commands must be run as root._
