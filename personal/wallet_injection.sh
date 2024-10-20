@@ -15,7 +15,7 @@ ALEO_FOLDER="$MINERS_FOLDER/aleo"
 XMRIG_FOLDER="$MINERS_FOLDER/xmrig"
 
 
-# Injection into Qubic GPU
+# Injection into Qubic GPU + Aleo
 cat <<EOF> $QUBIC_FOLDER/appsettings.json
 {
   "Settings": {
@@ -35,3 +35,27 @@ cat <<EOF> $QUBIC_FOLDER/appsettings.json
   }
 }
 EOF
+
+# Injection into Qubic CPU
+cat <<EOF> $QUBIC_CPU_FOLDER/appsettings.json
+{
+  "Settings": {
+    "baseUrl": "https://wps.qubic.li",
+    "alias": "$(hostname)_cpu",
+    "trainer": {
+      "cpu": true,
+      "gpu": false,
+      "gpuVersion": "CUDA12",
+      "cpuVersion": "",
+      "cpuThreads": 23
+    },
+    "isPps": true,
+    "useLiveConnection": true,
+    "accessToken": "$QUBIC_WALLET",
+    "idleSettings": null
+  }
+}
+EOF
+
+
+
