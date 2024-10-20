@@ -5,7 +5,7 @@
 # Developed by TheWalkingCat in 2024
 #--------------------------------------------------------------------
 
-. ./wallets
+. personal/wallets
 
 ### Folders ###
 MINERS_FOLDER="/home/$(whoami)/miners"
