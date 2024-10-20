@@ -5,14 +5,14 @@
 # Developed by TheWalkingCat in 2024
 #--------------------------------------------------------------------
 
-############### Folders ###############
+### Folders ###
 MINERS_FOLDER="/home/$(whoami)/miners"
 QUBIC_FOLDER="$MINERS_FOLDER/qubic"
 QUBIC_CPU_FOLDER="$MINERS_FOLDER/qubic_cpu"
 ALEO_FOLDER="$MINERS_FOLDER/aleo"
 XMRIG_FOLDER="$MINERS_FOLDER/xmrig"
 
-########### Miners Version ############
+### Miners Version ###
 QUBICLI_VERSION="2.2.1"
 ALEO_VERSION="3.0.10"
 XMRIG_VERSION="6.22.0"
