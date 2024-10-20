@@ -15,7 +15,7 @@ Tested on Ubuntu 24.04.1 LTS.
 Installation includes packages: vim, tmux.
 Installation includes miners: Qubic li, f2pool Aleominer, XMrig.
 
-The video card overclocking service is located in `/etc/systemd/system/overclock.service`. The following values ​​are used by default: core offset 200, core lock 2700, power limit 280, fan 70.
+The video card overclocking service created via RigelMiner and is located in `/etc/systemd/system/overclock.service`. The following values ​​are used by default: core offset 200, core lock 2700, power limit 280, fan 70.
 
 Miners are installed in the directory `/home/root/miners/`
 
@@ -36,5 +36,3 @@ Go to the project directory and run the build script:
 cd mining-kitty
 bash build.sh
 ```
-
-# How to change wallet
