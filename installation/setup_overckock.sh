@@ -11,7 +11,7 @@ RIGEL_SOURCE="https://github.com/rigelminer/rigel/releases/download/$RIGEL_VERSI
 
 # Download and move RigelMiner to /usr/bin
 wget -P /tmp $RIGEL_SOURCE
-tar -xvf /tmp/rigel-$RIGEL_VERSION-linux.tar.gz
+tar -xf /tmp/rigel-$RIGEL_VERSION-linux.tar.gz -C /tmp
 mv /tmp/rigel-$RIGEL_VERSION-linux/rigel /usr/bin
 rm -r /tmp/rigel*
 
