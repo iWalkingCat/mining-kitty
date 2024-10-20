@@ -1,3 +1,4 @@
+![4090 — копия](https://github.com/user-attachments/assets/fa91b927-0479-4271-a1ab-2aee94902f46)
 # Why Mining KIT'ty?
 
 Kitty doesn't like the store-bought houses. The kitten built his own house. A house needs heat, right?
