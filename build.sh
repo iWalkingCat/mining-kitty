@@ -9,6 +9,7 @@
 bash installation/install_packages.sh
 bash installation/setup_overckock.sh
 bash installation/install_miners.sh
+bash installation/setup_ssh.sh
 
 # Personalization
 bash personal/wallet_injection.sh
